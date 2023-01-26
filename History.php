@@ -89,7 +89,7 @@ echo "<tbody>";
 //  $sql = "SELECT triggerA.*, donor.Dname, orders.Hname FROM triggerA  JOIN donor ON triggerA.Did = donor.Did  JOIN orders ON triggerA.Oid = orders.Oid";
 $sql = "SELECT triggerA.*, orders.Hname FROM triggerA JOIN orders ON triggerA.Oid=orders.Oid";
 // $sql = "SELECT * FROM triggerA"; 
-echo "$sql";
+//echo "$sql";
 $result = $link->query($sql);
 // Loop through each row of data
 while ($row = $result->fetch_assoc()) {
